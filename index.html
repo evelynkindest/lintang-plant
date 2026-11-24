@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#244d35">
+    <meta name="description" content="Jelajahi koleksi tanaman hias dan temukan tips perawatannya di Lintang Plant.">
+    <title>Lintang Plant | Katalog Tanaman Hias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  
+    <header>
+        <a class="brand" href="#home" aria-label="Lintang Plant - kembali ke beranda">
+            <span class="brand-icon">✿</span>
+            <span>Lintang <strong>Plant</strong></span>
+        </a>
+        <nav aria-label="Navigasi utama">
+            <a href="#home">Home</a>
+            <a href="#katalog">Katalog</a>
+            <a href="#tips">Tips Perawatan</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-kicker">✦ Bawa kesegaran ke dalam rumah</span>
+            <h1>Selamat Datang di <span>Lintang Plant</span></h1>
+            <p>Temukan tanaman hias favorit untuk membuat setiap sudut rumah terasa lebih hidup, asri, dan nyaman.</p>
+            <div class="hero-actions">
+                <a href="#katalog" class="tombol">Jelajahi Katalog <span aria-hidden="true">→</span></a>
+                <a href="#tips" class="tombol tombol-outline">Pelajari Perawatan</a>
+            </div>
+            <div class="hero-note"><span>🌱</span> Pilihan tanaman untuk pemula hingga pecinta tanaman</div>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">
+            <span class="decoration-circle circle-one"></span>
+            <span class="decoration-circle circle-two"></span>
+            <span class="decoration-leaf">🌿</span>
+        </div>
+    </section>
+
+  
+    <main id="katalog">
+        <div class="section-heading">
+            <span class="section-kicker">Koleksi pilihan</span>
+            <h2>Tanaman Unggulan</h2>
+            <p>Temukan teman hijau yang paling cocok untuk ruangan dan gaya hidupmu.</p>
+        </div>
+
+        <div class="catalog-toolbar">
+            <label class="search-box" for="searchTanaman">
+                <span aria-hidden="true">⌕</span>
+                <input type="search" id="searchTanaman" placeholder="Cari nama tanaman..." autocomplete="off">
+                <kbd>⌕</kbd>
+            </label>
+            <div class="filter-group" role="group" aria-label="Filter kategori tanaman">
+                <button class="filter-btn active" type="button" data-filter="all">Semua</button>
+                <button class="filter-btn" type="button" data-filter="daun">Tanaman Daun</button>
+                <button class="filter-btn" type="button" data-filter="bunga">Tanaman Bunga</button>
+                <button class="filter-btn" type="button" data-filter="sukulen">Sukulen</button>
+            </div>
+        </div>
+        <p class="result-count" id="resultCount" aria-live="polite">Menampilkan 9 tanaman</p>
+
+        <div class="produk">
+          
+            <div class="card" data-category="daun" tabindex="0" role="button" onclick="bukaModal('Monstera', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBiqLpC5AFixF2ruT_HDEZ2oSPSZE9-XW8-_IIGwxqOA&s=10', 'Monstera merupakan tanaman hias yang memiliki daun besar berwarna hijau dengan bentuk unik dan berlubang. Tanaman ini berasal dari daerah tropis dan sering dijadikan hiasan rumah karena tampilannya yang cantik, unik, dan menarik.', 'Tanaman monstera dirawat dengan menyiramnya secara rutin, meletakkannya di tempat yang teduh dengan cahaya tidak langsung, menjaga kelembapan tanah, serta memberikan pupuk secara berkala agar tumbuh subur dan daunnya tetap indah. 🌿')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxcgawshXuCzLu_6_yUO0A5TlJI7WMf_1uu6ackLwt-g&s=10" alt="Tanaman Monstera" class="card-img" loading="lazy" decoding="async">
+                <h3>Monstera</h3>
+                <p>Tanaman hias daun.</p>
+            </div>
+
+       
+            <div class="card" data-category="bunga" tabindex="0" role="button" onclick="bukaModal('Mawar', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjibTQTQtJWpDuSpOurCVDe5lJgjv1D9Z6DoKwItrdZg&s=10', 'Bunga mawar merupakan salah satu jenis bunga yang sangat indah dan terkenal karena memiliki warna serta aroma yang harum. Bunga ini memiliki kelopak yang tersusun rapi dan bertumpuk, dengan batang yang biasanya berduri serta daun berwarna hijau. Mawar memiliki berbagai macam warna, seperti merah, putih, merah muda, kuning, dan ungu.', 'Bunga mawar dirawat dengan menyiram secara rutin, memberi pupuk, mendapatkan sinar matahari yang cukup, serta memangkas bagian yang layu agar tumbuh subur dan indah. 🌹')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrouky9eeYaNNI8jHTYZ9pGX4-f4_TekVZOpljmbVmeg&s=10" alt="Tanaman Lidah Mertua" class="card-img" loading="lazy" decoding="async">
+                <h3>Mawar</h3>
+                <p>Tanaman hias daun.</p>
+            </div>
+
+          
+            <div class="card" data-category="daun" tabindex="0" role="button" onclick="bukaModal('Melati romusa silver', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP7FzQGUR3x9g-w9hIQWaEfA6TN2VaBN6w2W-2uIJbyQ&s=10', 'Melati Romusa Silver merupakan tanaman hias yang memiliki daun berwarna hijau dengan corak keperakan. Tanaman ini memiliki tampilan yang unik dan menarik sehingga cocok dijadikan hiasan rumah maupun taman.', 'Melati Romusa Silver dirawat dengan menyiramnya secara rutin, memberikan sinar matahari yang cukup, menggunakan tanah yang subur, serta memangkas daun yang kering agar tumbuh sehat dan indah. 🌿')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIh1YtUnOK0jwh-tO64Zc7wtLqlU4ptdMl-FfvmPZ35Q&s=10" alt="Tanaman Peace Lily" class="card-img" loading="lazy" decoding="async">
+                <h3>Melati romusa silver</h3>
+                <p>Tanaman hias bunga.</p>
+            </div>
+
+       
+            <div class="card" data-category="bunga" tabindex="0" role="button" onclick="bukaModal('Hortensia', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSffKQg70cHf1-2lL3Flm4g2t7mh9pt9cbCczlvjur06g&s=10', 'Bunga hydrangea atau hortensia adalah tanaman hias yang memiliki bunga kecil-kecil berbentuk bulat dengan warna beragam, seperti biru, merah muda, putih, dan ungu. Bunga ini terkenal karena keindahan dan bentuknya yang menarik. 💐.', 'Bunga hydrangea dirawat dengan menyiramnya secara rutin, meletakkannya di tempat yang teduh, memberikan pupuk secara berkala, serta menjaga kelembapan tanah agar tetap subur dan berbunga indah. 💐')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtXs96fggSb7-uHZ11F4UbKjnyu1NeUs7Vj9DDjNLLiA&s=10" alt="Tanaman Aglaonema" class="card-img" loading="lazy" decoding="async">
+                <h3>Hortensia</h3>
+                <p>Tanaman hias semak.</p>
+            </div>
+
+     
+            <div class="card" data-category="bunga" tabindex="0" role="button" onclick="bukaModal('Anggrek Hitam🖤', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUJT6qkVErf8lPXhTbpuuNlMoyehakeyd1DolhdffkMA&s=10', 'Bunga anggrek hitam merupakan tanaman langka yang berasal dari Kalimantan. Bunga ini memiliki kelopak berwarna hijau dengan bagian tengah berwarna hitam pekat. Anggrek hitam memiliki bentuk yang unik dan indah sehingga menjadi salah satu tanaman hias yang istimewa.', 'Bunga anggrek hitam dirawat dengan menyiramnya secara teratur, meletakkannya di tempat yang teduh, menjaga kelembapan udara, serta memberikan pupuk secara berkala agar tumbuh sehat dan berbunga indah. ')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqW0xD_Upr2HzPAPRZYdmAbxAyIYBIkRG5z6TxvZXq4A&s=10" alt="Tanaman Kaktus Mini" class="card-img" loading="lazy" decoding="async">
+                <h3>Anggrek hitam</h3>
+                <p>Tanaman hias sekulen.</p>
+            </div>
+
+ 
+            <div class="card" data-category="bunga" tabindex="0" role="button" onclick="bukaModal('Lili', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAYrvPUHQFlFNgRuQ_8gipW-0Jazwe7pWX6f7YGYxZxw&s=10', 'Bunga lili merupakan tanaman hias yang memiliki kelopak besar dan indah serta aroma yang harum. Bunga ini memiliki berbagai warna, seperti putih, merah muda, kuning, dan oranye. Bunga lili melambangkan kesucian, keindahan, dan kemurnian.', 'Bunga lili dirawat dengan menyiramnya secara rutin, memberikan sinar matahari yang cukup, menggunakan tanah yang subur, serta memberi pupuk secara berkala agar tumbuh sehat dan menghasilkan bunga yang indah. 🌸')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPrkJXvMVYKJY_bZ6DSMdZArKaqkA0AjeTTdNJ891HQ&s=10" alt="Tanaman Sirih Gading" class="card-img" loading="lazy" decoding="async">
+                <h3>Lili🤍</h3>
+                <p>Tanaman hias gantung.</p>
+            </div>
+
+          
+            <div class="card" data-category="bunga" tabindex="0" role="button" onclick="bukaModal('krisan hijau', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoKy_W4HAyTSX7U0pQZmGVTLsMqW8qXREcYagCt4ECvw&s=10', 'Bunga krisan hijau merupakan tanaman hias yang memiliki kelopak berwarna hijau dengan bentuk yang unik dan menarik. Bunga ini memiliki banyak lapisan kelopak dan sering digunakan sebagai hiasan maupun rangkaian bunga karena tampilannya yang cantik dan segar.', 'Bunga krisan hijau dirawat dengan menyiramnya secara rutin, memberikan sinar matahari yang cukup, menggunakan tanah yang subur, serta memberi pupuk secara berkala agar tumbuh sehat dan menghasilkan bunga yang indah. 🌿')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRUXIfDYRY_7oaPQUQ9UxGGHh3ig_lAlMVdihDeTw_rg&s=10" alt="Tanaman Anthurium" class="card-img" loading="lazy" decoding="async">
+                <h3>Krisan hijau</h3>
+                <p>Tanaman hias daun & bunga.</p>
+            </div>
+
+             <div class="card" data-category="bunga" tabindex="0" role="button" onclick="bukaModal('Tulip', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWmMLPAD067Ran6VU4gzScjgPTw-i5gBFkQLxP-1F1pw&s=10', 'Bunga tulip merupakan tanaman hias yang berasal dari Asia Tengah dan terkenal di Belanda. Bunga ini memiliki bentuk seperti cangkir dengan warna beragam, seperti merah, kuning, putih, dan merah muda. Tulip memiliki tampilan yang sederhana, indah, dan melambangkan cinta serta kebahagiaan.', 'Bunga tulip dirawat dengan menyiramnya secukupnya, meletakkannya di tempat yang sejuk, memberikan sinar matahari yang cukup, serta menggunakan tanah yang subur dan memiliki drainase baik agar tumbuh sehat dan indah. 🌷')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlJU3yr6-e_i6DMKrbZ18rPDhQ0XJSWcj09iv1CUDStg&s=10" alt="Tanaman Lidah Mertua" class="card-img" loading="lazy" decoding="async">
+                <h3>Tulip</h3>
+                <p>Tanaman hias daun.</p>
+            </div>
+
+             <div class="card" data-category="sukulen" tabindex="0" role="button" onclick="bukaModal('kaktus mini', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjoaBJEXQzV_V64c0dujuFgL_MMLTB1lXaYk8T22NbtQ&s=10', 'Kaktus mini merupakan tanaman hias berukuran kecil yang memiliki batang tebal dan duri di permukaannya. Tanaman ini mampu menyimpan air sehingga tidak membutuhkan banyak penyiraman. Kaktus mini memiliki bentuk yang unik dan cocok dijadikan hiasan rumah atau meja.', 'Kaktus mini dirawat dengan menyiramnya secukupnya, meletakkannya di tempat yang terkena sinar matahari, menggunakan tanah yang tidak mudah menyimpan air, serta menghindari penyiraman berlebihan agar tidak membusuk. 🌵')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlJllOUGcsEb0Wy18lM_ZoX8yiRTZlbXEmw67EOMAEjQ&s=10" alt="Tanaman Lidah Mertua" class="card-img" loading="lazy" decoding="async">
+                <h3>Kaktus Mini</h3>
+                <p>Sukulen</p>
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+    <div id="modalTanaman" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="tutupModal()">&times;</span>
+            <img id="modalImg" src="" alt="Foto Tanaman">
+            <div class="modal-text">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDesc"></p>
+                <h4>Cara Perawatan:</h4>
+                <p id="modalCare"></p>
+            </div>
+        </div>
+    </div>
+
+    
+    <section class="tips-section" id="tips">
+        <div class="tips-container">
+            <div class="section-heading">
+                <span class="section-kicker">Rahasia tanaman sehat</span>
+                <h2>Tips Merawat Tanaman</h2>
+                <p>Perawatan sederhana yang bisa kamu lakukan agar tanaman tetap segar dan tumbuh cantik.</p>
+            </div>
+            <div class="tips-grid">
+                <article class="tip-card">
+                    <span class="tip-number">01</span>
+                    <div class="tip-icon">💧</div>
+                    <h3>Atur Penyiraman</h3>
+                    <p>Periksa kelembapan tanah sebelum menyiram. Setiap tanaman memiliki kebutuhan air yang berbeda.</p>
+                </article>
+                <article class="tip-card">
+                    <span class="tip-number">02</span>
+                    <div class="tip-icon">☀️</div>
+                    <h3>Kenali Cahaya</h3>
+                    <p>Letakkan tanaman sesuai kebutuhan cahayanya. Sebagian tanaman lebih menyukai cahaya tidak langsung.</p>
+                </article>
+                <article class="tip-card">
+                    <span class="tip-number">03</span>
+                    <div class="tip-icon">🪴</div>
+                    <h3>Pilih Media Tanam</h3>
+                    <p>Gunakan media tanam yang gembur dan pot dengan lubang drainase agar akar tidak mudah membusuk.</p>
+                </article>
+                <article class="tip-card">
+                    <span class="tip-number">04</span>
+                    <div class="tip-icon">✂️</div>
+                    <h3>Pangkas Berkala</h3>
+                    <p>Buang daun yang kering atau layu supaya tanaman terlihat rapi dan energi pertumbuhannya terjaga.</p>
+                </article>
+            </div>
+            <p class="tips-reminder">💚 Ingat: amati kondisi tanaman secara rutin karena kebutuhan tiap jenis bisa berbeda.</p>
+        </div>
+    </section>
+
+  
+    <section class="tentang-kami" id="tentang">
+        <div class="tentang-container">
+            <h2>Tentang Lintang Plant</h2>
+            <p class="tentang-desc">
+                <strong>Lintang Plant</strong> hadir untuk membantu Anda mempercantik ruangan rumah, kantor, atau taman impian Anda dengan berbagai pilihan tanaman hias berkualitas terbaik. Kami berkomitmen menyediakan tanaman pilihan yang sehat, segar, dan mudah dirawat, baik bagi pemula maupun kolektor tanaman.
+            </p>
+            
+         
+            <div class="tentang-features">
+                <div class="feature-item">
+                    <span class="feature-icon">🌱</span>
+                    <h3>100% Segar & Sehat</h3>
+                    <p>Dipelihara dengan perawatan terbaik sebelum sampai ke tangan Anda.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🚚</span>
+                    <h3>Pengiriman Aman</h3>
+                    <p>Dikemas secara profesional untuk menjaga keselamatan tanaman.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">💡</span>
+                    <h3>Panduan Perawatan</h3>
+                    <p>Dapatkan tips mudah merawat tanaman langsung dari ahlinya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak">
+        <div class="footer-leaf" aria-hidden="true">🌿</div>
+        <h3>Lintang Plant</h3>
+        <p>Hadirkan suasana hijau dan lebih segar di setiap ruang.</p>
+        <div class="footer-links">
+            <a href="#home">Beranda</a>
+            <a href="#katalog">Katalog</a>
+            <a href="#tips">Tips Perawatan</a>
+            <a href="#tentang">Tentang Kami</a>
+  </div>
+
+<p class="copyright">
+    © 2026 Lintang Plant. Tumbuh bersama kebaikan alam.
+    Hubungi kami di
+    <a href="mailto:evelynfines@gmail.com">
+        evelynfines@gmail.com
+    </a>
+</p>
+
+</footer>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Kembali ke atas">↑</button>
+
+</body>
+</html>
